@@ -13,9 +13,9 @@ This code is the official implementation of the paper: MCM: Masked Cell Modellin
 ```
 
 ## Prepare dataset
-   1) Download dataset.
+   1) Download dataset. To reproduce the results, in addition to the datasets provided in this repository, more datasets can be found in [ODDS](https://odds.cs.stonybrook.edu/) and [ADBench](https://github.com/Minqi824/ADBench).
    2) Move the dataset into `./Data`. 
-   3) The dataset needs to be entered in a specified format to fit the `Dataloader` such as '.npz' and '.mat'.
+   3) When using your own data, the dataset needs to be entered in a specified format to fit the `Dataloader` such as '.npz' and '.mat'.
 
 ## Run
 Run `main.py` to start training and testing the model. Results will be automatically stored in `./results`.
