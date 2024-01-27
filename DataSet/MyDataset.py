@@ -6,7 +6,6 @@ from scipy import io
 import torch
 from torch.utils.data import Dataset
 
-
 class CsvDataset(Dataset):
     def __init__(self, dataset_name: str, data_dim: int, data_dir: str, mode: str = 'train'):
         super(CsvDataset, self).__init__()
