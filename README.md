@@ -1,4 +1,4 @@
-# MCM: Masked Cell Modelling for Anomaly Detection In Tabular Data
+# Pytorch Implementation of Masked Cell Modelling for Anomaly Detection In Tabular Data
 
 This code is the official implementation of the paper: [MCM: Masked Cell Modelling for Anomaly Detection in Tabular Data](https://openreview.net/forum?id=lNZJyEDxy4) published at ICLR 2024 as a conference paper by Jiaxin Yin, Yuanyuan Qiao, Zitang Zhou, Xiangchao Wang, and Jie Yang. The code allows the users to reproduce and extend the results reported in the study. Please cite the above paper when reporting, reproducing or extending the results.
 
