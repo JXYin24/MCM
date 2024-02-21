@@ -1,0 +1,3 @@
+epochs: 200 lr: 0.0500 gamma: 0.98 masks: 15 lambda: 5.0 
+de_layer: 3  hidden_dim: 256 z_dim: 128 mask_layer: 3
+mse: average AUC-ROC: 0.9814  average AUC-PR: 0.8887 average f1: 0.7273
