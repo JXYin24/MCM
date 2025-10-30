@@ -4,8 +4,6 @@ from DataSet.MyDataset import CsvDataset, MatDataset, NpzDataset
 
 def get_dataloader(model_config: dict):
     dataset_name = model_config['dataset_name']
-
-
     if dataset_name in ['arrhythmia', 'breastw', 'cardio', 'glass', 'ionosphere', 'mammography', 'pima', 'satellite', 'satimage-2', 'shuttle', 'thyroid', 'wbc']:
         train_set = MatDataset(dataset_name, model_config['data_dim'], model_config['data_dir'], mode='train')
         test_set = MatDataset(dataset_name, model_config['data_dim'], model_config['data_dir'], mode='eval')
@@ -24,3 +22,6 @@ def get_dataloader(model_config: dict):
                               shuffle=False)
     test_loader = DataLoader(test_set, batch_size=model_config['batch_size'], shuffle=False)
     return train_loader, test_loader
+if __name__ == '__main__':
+    config={'dataset_name': 'wbc', 'data_dim': 30, 'data_dir': '../Data/', 'batch_size': 512}
+    get_dataloader(config)
