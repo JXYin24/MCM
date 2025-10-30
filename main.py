@@ -1,10 +1,32 @@
 import torch
 import numpy as np
 from Model.Trainer import Trainer
+# model_config = {
+#     'dataset_name': 'wbc',
+#     'data_dim': 30,
+#     'epochs': 500,
+#     'learning_rate': 0.05,
+#     'sche_gamma': 0.98,
+#     'mask_num': 15,
+#     'lambda': 5,
+#     'device': 'cuda:0',
+#     'data_dir': 'Data/',
+#     'runs': 1,
+#     'batch_size': 512,
+#     'en_nlayers': 3,
+#     'de_nlayers': 3,
+#     'hidden_dim': 256,
+#     'z_dim': 128,
+#     'mask_nlayers': 3,
+#     'random_seed': 42,
+#     'num_workers': 0
+# }
+# 处理之前就读取数据，获取有多少列 除了标签列之外
+# 1、先训练模型(有标签列， 有已知的异常。训练完成后，进行使用Model.pth进行推理 )
 model_config = {
-    'dataset_name': 'wbc',
-    'data_dim': 30,
-    'epochs': 200,
+    'dataset_name': 'zntest_117_ad', # 需要求改
+    'data_dim': 12,# 除了标签列 一共有几列
+    'epochs': 500,
     'learning_rate': 0.05,
     'sche_gamma': 0.98,
     'mask_num': 15,
@@ -12,14 +34,14 @@ model_config = {
     'device': 'cuda:0',
     'data_dir': 'Data/',
     'runs': 1,
-    'batch_size': 512, 
+    'batch_size': 512,
     'en_nlayers': 3,
     'de_nlayers': 3,
     'hidden_dim': 256,
     'z_dim': 128,
     'mask_nlayers': 3,
     'random_seed': 42,
-    'num_workers': 0
+    'num_workers': 0 # 并行
 }
 
 if __name__ == "__main__":

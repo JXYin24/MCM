@@ -15,6 +15,7 @@ class CsvDataset(Dataset):
         path = os.path.join(data_dir, dataset_name+'.csv')
         with (open(path, 'r')) as data_from:
             csv_reader = csv.reader(data_from)
+
             for i in csv_reader:
                 x.append(i[0:data_dim])
                 labels.append(i[data_dim])
@@ -59,6 +60,7 @@ class MatDataset(Dataset):
         if mode == 'train':
             self.data = torch.Tensor(train_data)
             self.targets =torch.Tensor(train_label)
+            print(self.targets.shape)
         else:
             self.data = torch.Tensor(test_data)
             self.targets = torch.Tensor(test_label)

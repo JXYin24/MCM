@@ -36,7 +36,7 @@ class Trainer(object):
             info = 'Epoch:[{}]\t loss={:.4f}\t mse={:.4f}\t divloss={:.4f}\t'
             train_logger.info(info.format(epoch,loss.cpu(),mse.cpu(),divloss.cpu()))
             if loss < min_loss:
-                torch.save(self.model, 'model.pth')
+                torch.save(self.model, 'model.pth') # 保存模型
                 min_loss = loss
         print("Training complete.")
         train_logger.handlers.clear()

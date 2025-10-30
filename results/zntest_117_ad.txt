@@ -1,0 +1,21 @@
+epochs: 500 lr: 0.0500 gamma: 0.98 masks: 15 lambda: 5.0 
+de_layer: 3  hidden_dim: 256 z_dim: 128 mask_layer: 3
+mse: average AUC-ROC: 0.9296  average AUC-PR: 0.9331 average f1: 0.9167
+epochs: 500 lr: 0.0500 gamma: 0.98 masks: 15 lambda: 5.0 
+de_layer: 3  hidden_dim: 256 z_dim: 128 mask_layer: 3
+mse: average AUC-ROC: 0.9296  average AUC-PR: 0.9331 average f1: 0.9167
+epochs: 500 lr: 0.0500 gamma: 0.98 masks: 15 lambda: 5.0 
+de_layer: 3  hidden_dim: 256 z_dim: 128 mask_layer: 3
+mse: average AUC-ROC: 0.9511  average AUC-PR: 0.9319 average f1: 0.9167
+epochs: 500 lr: 0.0500 gamma: 0.98 masks: 15 lambda: 5.0 
+de_layer: 3  hidden_dim: 256 z_dim: 128 mask_layer: 3
+mse: average AUC-ROC: 0.9511  average AUC-PR: 0.9319 average f1: 0.9167
+epochs: 500 lr: 0.0500 gamma: 0.98 masks: 15 lambda: 5.0 
+de_layer: 3  hidden_dim: 256 z_dim: 128 mask_layer: 3
+mse: average AUC-ROC: 0.9511  average AUC-PR: 0.9319 average f1: 0.9167
+epochs: 500 lr: 0.0500 gamma: 0.98 masks: 15 lambda: 5.0 
+de_layer: 3  hidden_dim: 256 z_dim: 128 mask_layer: 3
+mse: average AUC-ROC: 0.9511  average AUC-PR: 0.9319 average f1: 0.9167
+epochs: 500 lr: 0.0500 gamma: 0.98 masks: 15 lambda: 5.0 
+de_layer: 3  hidden_dim: 256 z_dim: 128 mask_layer: 3
+mse: average AUC-ROC: 0.9511  average AUC-PR: 0.9319 average f1: 0.9167
